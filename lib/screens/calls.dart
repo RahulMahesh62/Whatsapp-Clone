@@ -3,10 +3,8 @@ import 'package:flutter/material.dart';
 class CallScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(
-          "Calls"
-        ),
+    return Center(
+        child: Image.asset("assets/call.jpg"),
     );
   }
 }

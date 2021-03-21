@@ -60,13 +60,21 @@ class _WPHomeState extends State<WPHome> with SingleTickerProviderStateMixin {
           indicatorWeight: 3.0,
         ),
       ),
-      body: Container(),
+      body: TabBarView(
+        controller: _tabController,
+        children: [
+          CameraScreen(),
+          ChatScreen(),
+          StatusScreen(),
+          CallScreen(),
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         child: Icon(
           Icons.message,
           color: Colors.white,
         ),
-        backgroundColor: Color(0xff075e54),
+        backgroundColor: Color(0xff25d366),
         onPressed: () {},
       ),
     );
